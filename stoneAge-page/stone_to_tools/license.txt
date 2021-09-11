@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stone to Tools
+* source:	https://sketchfab.com/3d-models/stone-to-tools-e6d053885e454f498878969ebbde1d25
+* author:	John Toeppen (https://sketchfab.com/toeppen)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stone to Tools" (https://sketchfab.com/3d-models/stone-to-tools-e6d053885e454f498878969ebbde1d25) by John Toeppen (https://sketchfab.com/toeppen) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

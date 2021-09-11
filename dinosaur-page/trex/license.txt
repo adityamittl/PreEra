@@ -1,0 +1,11 @@
+Model Information:
+* title:	Trex
+* source:	https://sketchfab.com/3d-models/trex-ef7f59fb082148a081ad0779775c6917
+* author:	rmasakorala (https://sketchfab.com/rmasakorala)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Trex" (https://sketchfab.com/3d-models/trex-ef7f59fb082148a081ad0779775c6917) by rmasakorala (https://sketchfab.com/rmasakorala) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
