@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pre Era | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: montserrat;
+        }
+
+        nav {
+            background: #a72b1a;
+            height: 80px;
+            width: 100%;
+        }
+
+        label.logo {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        a.active,
+        a:hover {
+            background: #790e00;
+            transition: .5s;
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 952px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 858px) {
+            .checkbtn {
+                display: block;
+            }
+
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+            a:hover,
+            a.active {
+                background: none;
+                color: #0082e6;
+            }
+
+            #check:checked~ul {
+                left: 0;
+            }
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            height: 100%;
+            margin-bottom: 15px;
+        }
+
+        .profile {
+            display: grid;
+            place-items: left;
+            margin: 15px;
+            margin-left: 55px;
+        }
+
+        .Ross_des {
+            font-size: 25px;
+            padding: 25px;
+            margin-left: 40px;
+        }
+
+        .Ross_proff {
+            font-size: 20px;
+            margin-top: -15px;
+            margin-left: 80px;
+        }
+
+        .hero_desc {
+            font-size: 200px;
+            font-weight: 700;
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            margin-left: -35px;
+        }
+
+        .dec {
+            display: grid;
+            place-items: center;
+            padding-bottom: 20px;
+        }
+
+        .title {
+            font-size: 50px;
+        }
+
+        .vision_desc {
+            background-color: #a72b1a;
+            color: white;
+            font-size: 35px;
+            margin: auto 250px;
+            padding: 30px;
+        }
+    </style>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="assets/logo.png" alt="logo" class="logo" width="350px">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Private Tour</a></li>
+            <li><a href="#">Museum</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="profile">
+            <img src="./assets/RossGeller-modified.png" width="320px">
+            <h1 class="Ross_des">Dr. Ross Galler</h1>
+            <h1 class="Ross_proff">Paleontologist</h1>
+        </div>
+        <div class="hero_desc">Welcome to Pre Era</div>
+    </div>
+    <div class="dec">
+        <div class="title">Our Vision</div>
+        <p class="vision_desc">
+            When the pandemic started, all the public spaces including Museums were shut. Since people could no longer
+            visit museums, we brought the museums to people's homes.<br><br>
+            Alternatively, we offer private tours of the museum for the extreme dinosaur lovers that you can attend from
+            the safety of your home. The funds collected from it would serve as the only source of income during these
+            tough times for the museum staff.
+        </p>
+    </div>
+</body>
+
+</html>
