@@ -7,6 +7,114 @@
 
 <body>
   <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    background: #a72b1a;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
     body {
       height: 100%;
       width: 100%;
@@ -90,6 +198,21 @@
       }
     }
   </style>
+
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+  </label>
+  <img src="../media/logo.png" alt="logo" class="logo" width="350px">
+  <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/dinos">Explore-Dinos</a></li>
+      <li><a href="/stoneage">Explore-Tools</a></li>
+      <li><a href="/tour">Private Tour</a></li>
+      <li><a href="/map">Museum</a></li>
+  </ul>
+</nav>
 
   <h1 class="heading">Dinosaurs</h1>
   <div id="holder">
@@ -230,64 +353,6 @@
       </model-viewer>
     </div>
   </div>
-
-  <h1 class="heading">Stone Age era</h1>
-
-  <div id="holder">
-    <div id="text">
-      <h1 class="sample-text">Stone Hammer Axe</h1>
-      <p class="">
-        In archaeology, a hammerstone is a hard cobble used to strike off
-        lithic flakes from a lump of tool stone during the process of lithic
-        reduction. The hammerstone is a rather universal stone tool which
-        appeared early in most regions of the world including Europe, India
-        and North America. This work is based on "Stone hammer Axe (Free)"
-        (https://sketchfab.com/3d-models/stone-hammer-axe-free-a0e76cba79784776b4346e6ae1732472)
-        by wolfgar74 (https://sketchfab.com/wolfgar74) licensed under
-        CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
-      </p>
-      <div class="qrCode">
-        <img class="qrCodeImg" src="https://storage.echoar.xyz/wispy-violet-4999/e2d9e5e4-d34b-4199-b7bc-c6ea5d24889f"
-          alt="Stone Age Tools QR" />
-        <a href="https://go.echoar.xyz/PnCX" style="text-decoration: none" target="_blank" rel="noreferrer">
-          <div class="btn">View in AR</div>
-        </a>
-      </div>
-    </div>
-    <div id="model">
-      <model-viewer camera-controls alt="A 3D model of a sphere"
-        src="../media/stoneAge-page/stone_hammer_axe_free/scene.gltf">
-      </model-viewer>
-    </div>
-  </div>
-
-  <div id="holder">
-    <div id="text">
-      <h1 class="sample-text">Stone Age Tools</h1>
-      <p class="">
-        The Early Stone Age began with the most basic stone implements made by
-        early humans. These Oldowan toolkits include hammerstones, stone
-        cores, and sharp stone flakes. By about 1.76 million years ago, early
-        humans began to make Acheulean handaxes and other large cutting
-        tools.This work is based on "Stone to Tools"
-        (https://sketchfab.com/3d-models/stone-to-tools-e6d053885e454f498878969ebbde1d25)
-        by John Toeppen (https://sketchfab.com/toeppen) licensed under
-        CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
-      </p>
-      <div class="qrCode">
-        <img class="qrCodeImg" src="https://storage.echoar.xyz/wispy-violet-4999/e2d9e5e4-d34b-4199-b7bc-c6ea5d24889f"
-          alt="Stone Age Tools QR" />
-        <a href="https://go.echoar.xyz/PnCX" style="text-decoration: none" target="_blank" rel="noreferrer">
-          <div class="btn">View in AR</div>
-        </a>
-      </div>
-    </div>
-    <div id="model">
-      <model-viewer camera-controls alt="A 3D model of a sphere" src="../media/stoneAge-page/stone_to_tools/scene.gltf">
-      </model-viewer>
-    </div>
-  </div>
-
 
   <!-- Loads model-viewer for modern browsers -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>

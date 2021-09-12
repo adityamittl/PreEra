@@ -17,6 +17,7 @@ Moreover, it provides a Private Tour functionality where people can book a priva
 - (maybe if present) Users can explore more about the animal/tool by clicking on it, such as if you click on the fin of the shark it will give a short description about that
 - Users can also view all the animals/tools in AR (Augmented Reality)
 - Users can also book a personal tour by an expert from the museum at the comfort of their homes
+- Users can search for any Museum near them
 
 ## ⛅ Use of Google Cloud
 

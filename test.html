@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Pre Era | Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Museum</title>
 </head>
 
 <body>
@@ -126,58 +125,25 @@
             }
         }
 
-        .hero {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            height: 100%;
-            margin-bottom: 15px;
-        }
-
-        .profile {
-            display: grid;
-            place-items: left;
-            margin: 15px;
-            margin-left: 55px;
-        }
-
-        .Ross_des {
-            font-size: 25px;
-            padding: 25px;
-            margin-left: 40px;
-        }
-
-        .Ross_proff {
-            font-size: 20px;
-            margin-top: -15px;
-            margin-left: 80px;
-        }
-
-        .hero_desc {
-            font-size: 170px;
-            font-weight: 700;
-            font-family: 'Dancing Script', cursive;
-            text-align: center;
-            margin-left: -35px;
-        }
-
-        .dec {
+        .map_title {
+            font-size: 35px;
             display: grid;
             place-items: center;
-            padding-bottom: 20px;
         }
 
-        .title {
-            font-size: 50px;
+        .map {
+            width: 100%;
+            display: grid;
+            place-items: center;
         }
 
-        .vision_desc {
-            background-color: #a72b1a;
-            color: white;
-            font-size: 35px;
-            margin: auto 250px;
-            padding: 30px;
+        #map {
+            margin-top: 25px;
+            height: 500px;
+            width: 00px;
         }
     </style>
+
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -192,23 +158,26 @@
             <li><a href="/map">Museum</a></li>
         </ul>
     </nav>
-    <div class="hero">
-        <div class="profile">
-            <img src="../media/RossGeller-modified.png" width="320px">
-            <h1 class="Ross_des">Dr. Ross Galler</h1>
-            <h1 class="Ross_proff">Paleontologist</h1>
-        </div>
-        <div class="hero_desc">Welcome to<br>Pre Era</div>
-    </div>
-    <div class="dec">
-        <div class="title">Our Vision</div>
-        <p class="vision_desc">
-            When the pandemic started, all the public spaces including Museums were shut. Since people could no longer
-            visit museums, we brought the museums to people's homes.<br><br>
-            Alternatively, we offer private tours of the museum for the extreme dinosaur lovers that you can attend from
-            the safety of your home. The funds collected from it would serve as the only source of income during these
-            tough times for the museum staff.
-        </p>
+    <div class="map">
+        <div class="map_title">Museum near me</div>
+        <div id="map"></div>
+
+        <script>
+            function initMap() {
+                var location = { lat: 13.053458, lng: 77.550551 };
+                var map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 4,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                })
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+        <!-- <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8&callback=initMap"></script> -->
     </div>
 </body>
 

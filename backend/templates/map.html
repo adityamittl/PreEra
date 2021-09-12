@@ -16,16 +16,11 @@
             place-items: center;
         }
 
-        .map {
-            width: 100%;
+        #map {
             display: grid;
             place-items: center;
-        }
-
-        #map {
-            margin-top: 25px;
             height: 500px;
-            width: 00px;
+            width: 500px;
         }
     </style>
     <div class="map">
@@ -34,7 +29,7 @@
 
         <script>
             function initMap() {
-                var location = { lat: 13.053458, lng: 77.550551 };
+                var location = {lat: 13.053458, lng: 77.550551};
                 var map = new google.maps.Map(document.getElementById("map"), {
                     zoom: 40,
                     center: location
@@ -45,9 +40,8 @@
                 })
             }
         </script>
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8&callback=initMap"></script>
     </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8&callback=initMap"></script>
 </body>
 
 </html>
