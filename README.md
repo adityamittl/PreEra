@@ -18,13 +18,17 @@ Moreover, it provides a Private Tour functionality where people can book a priva
 - Users can also view all the animals/tools in AR (Augmented Reality)
 - Users can also book a personal tour by an expert from the museum at the comfort of their homes
 
+## Use of CockroachDB
+
+- We have used CockroachDB as a primary database, becaue it is easy to use, open source and indestructible SQL database.
+
 ## 🔨 Tech Stack
 
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
 
 ## 🧠 Challenges we ran into
 
-One challenging part was how to implement the AR and rendering the 3D models using react-three-fiber, and it took a while to learn and figure out how to make it work properly in the website. 
+One challenging part was how to implement the AR and rendering the 3D models using react-three-fiber, and it took a while to learn and figure out how to make it work properly in the website.
 
 ## 🏅 Accomplishments that we're proud of
 
@@ -40,6 +44,7 @@ How to use Three Js and collaboration.
 - Add more 3D models
 
 ## Installing and running
+
 ```
 pip install -r requirements.txt
 python manage.py runserver
