@@ -18,6 +18,10 @@ Moreover, it provides a Private Tour functionality where people can book a priva
 - Users can also view all the animals/tools in AR (Augmented Reality)
 - Users can also book a personal tour by an expert from the museum at the comfort of their homes
 
+## ⛅ Use of Google Cloud
+
+- We have used Google cloud API to integrate Google map i our site, which displays museum present near me
+
 ## Use of CockroachDB
 
 - We have used CockroachDB as a primary database, becaue it is easy to use, open source and indestructible SQL database.
