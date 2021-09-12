@@ -1,302 +1,298 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PreEra</title>
-  </head>
 
-  <body>
-    <style>
-      body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        background-color: #386e88;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+<head>
+  <title>PreEra</title>
+</head>
+
+<body>
+  <style>
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      background-color: #386e88;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+
+    .heading {
+      font-size: 50px;
+      color: white;
+      display: grid;
+      place-items: center;
+    }
+
+    #holder {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 100%;
+      margin-bottom: 15px;
+    }
+
+    #text {
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      margin: 0px 45px;
+      color: white;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 80%;
+      outline: none;
+    }
+
+    .qrCode {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+    }
+
+    .qrCodeImg {
+      height: 200px;
+      width: 200px;
+    }
+
+    .btn,
+    .btn2 {
+      margin-top: 100px;
+      width: 200px;
+      height: 40px;
+      font-size: 20px;
+      font-family: "Source Serif Pro", serif;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 10px;
+      line-height: 25px;
+      letter-spacing: 1.2px;
+      color: rgba(255, 255, 255, 0.9);
+      border-radius: 50px;
+      background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+      background-size: 600%;
+      -webkit-animation: anime 16s linear infinite;
+      animation: anime 16s linear infinite;
+    }
+
+    @keyframes anime {
+      0% {
+        background-position: 0% 50%;
       }
 
-      .heading {
-        font-size: 50px;
-        color: white;
-        display: grid;
-        place-items: center;
+      50% {
+        background-position: 100% 50%;
       }
 
-      #holder {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 100%;
-        margin-bottom: 15px;
+      100% {
+        background-position: 0% 50%;
       }
+    }
+  </style>
 
-      #text {
-        align-self: center;
-        justify-self: center;
-        text-align: center;
-        margin: 0px 45px;
-        color: white;
-      }
-
-      model-viewer {
-        width: 100%;
-        height: 80%;
-        outline: none;
-      }
-
-      .qrCode {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 25px;
-      }
-
-      .qrCodeImg {
-        height: 200px;
-        width: 200px;
-      }
-
-      .btn,
-      .btn2 {
-        margin-top: 100px;
-        width: 200px;
-        height: 40px;
-        font-size: 20px;
-        font-family: "Source Serif Pro", serif;
-        font-weight: bold;
-        text-align: center;
-        padding-top: 10px;
-        line-height: 25px;
-        letter-spacing: 1.2px;
-        color: rgba(255, 255, 255, 0.9);
-        border-radius: 50px;
-        background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
-        background-size: 600%;
-        -webkit-animation: anime 16s linear infinite;
-        animation: anime 16s linear infinite;
-      }
-
-      @keyframes anime {
-        0% {
-          background-position: 0% 50%;
-        }
-
-        50% {
-          background-position: 100% 50%;
-        }
-
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-    </style>
-
-    <h1 class="heading">Dinosaurs</h1>
-    <div id="holder">
-      <div id="text">
-        <h1 class="sample-text">Coelophysis</h1>
-        <p class="">
-          Coelophysis ( as heard more commonly in recent decades) is an extinct
-          genus of coelophysid theropod dinosaur that lived approximately 221.5
-          to 196 million years ago during the latter part of the Triassic Period
-          in what is now the southwestern United States and also in South Africa
-          and Zimbabwe.
-        </p>
-        <div class="qrCode">
-          <img
-            class="qrCodeImg"
-            src="https://storage.echoar.xyz/wispy-violet-4999/a760c2d2-531f-4d2e-b3fc-2fed1f7d6cd4"
-            alt="Dinosaurs QR"
-          />
-          <a
-            href="https://go.echoar.xyz/kkG8"
-            style="text-decoration: none"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div class="btn">View in AR</div>
-          </a>
-        </div>
-      </div>
-      <div id="model">
-        <model-viewer
-          camera-controls
-          alt="A 3D model of a sphere"
-          src="/media/dinosaur-page/coelophysis/scene.gltf"
-        >
-        </model-viewer>
+  <h1 class="heading">Dinosaurs</h1>
+  <div id="holder">
+    <div id="text">
+      <h1 class="sample-text">Coelophysis</h1>
+      <p class="">
+        Coelophysis ( as heard more commonly in recent decades) is an extinct
+        genus of coelophysid theropod dinosaur that lived approximately 221.5
+        to 196 million years ago during the latter part of the Triassic Period
+        in what is now the southwestern United States and also in South Africa
+        and Zimbabwe.
+      </p>
+      <div class="qrCode">
+        <img class="qrCodeImg" src="https://storage.echoar.xyz/wispy-violet-4999/a760c2d2-531f-4d2e-b3fc-2fed1f7d6cd4"
+          alt="Dinosaurs QR" />
+        <a href="https://go.echoar.xyz/kkG8" style="text-decoration: none" target="_blank" rel="noreferrer">
+          <div class="btn">View in AR</div>
+        </a>
       </div>
     </div>
+    <div id="model">
+      <model-viewer camera-controls alt="A 3D model of a sphere" src="../media/dinosaur-page/coelophysis/scene.gltf">
+      </model-viewer>
+    </div>
+  </div>
 
-    <div id="holder">
-      <div id="text">
-        <h1 class="sample-text">Argentinosaurus</h1>
-        <p class="">
-          Argentinosaurus is a genus of giant sauropod dinosaur that lived
-          during the Late Cretaceous period in what is now Argentina. Although
-          it is only known from fragmentary remains, Argentinosaurus is one of
-          the largest known land animals of all time, perhaps the largest, with
-          length estimates ranging from 30 to 40 metres (100 to 130 ft) and
-          weight estimates from 50 to 100 tonnes (55 to 110 short tons). It was
-          a member of Titanosauria, the dominant group of sauropods during the
-          Cretaceous.
-        </p>
-        <div class="qrCode">
-          <img
-            class="qrCodeImg"
-            src="https://storage.echoar.xyz/wispy-violet-4999/a760c2d2-531f-4d2e-b3fc-2fed1f7d6cd4"
-            alt="Dinosaurs QR"
-          />
-          <a
-            href="https://go.echoar.xyz/kkG8"
-            style="text-decoration: none"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div class="btn">View in AR</div>
-          </a>
-        </div>
-      </div>
-      <div id="model">
-        <model-viewer
-          camera-controls
-          alt="A 3D model of a sphere"
-          src="/media/dinosaur-page/dinosaur/scene.gltf"
-        >
-        </model-viewer>
+  <div id="holder">
+    <div id="text">
+      <h1 class="sample-text">Argentinosaurus</h1>
+      <p class="">
+        Argentinosaurus is a genus of giant sauropod dinosaur that lived
+        during the Late Cretaceous period in what is now Argentina. Although
+        it is only known from fragmentary remains, Argentinosaurus is one of
+        the largest known land animals of all time, perhaps the largest, with
+        length estimates ranging from 30 to 40 metres (100 to 130 ft) and
+        weight estimates from 50 to 100 tonnes (55 to 110 short tons). It was
+        a member of Titanosauria, the dominant group of sauropods during the
+        Cretaceous.
+      </p>
+      <div class="qrCode">
+        <img class="qrCodeImg" src="https://storage.echoar.xyz/wispy-violet-4999/a760c2d2-531f-4d2e-b3fc-2fed1f7d6cd4"
+          alt="Dinosaurs QR" />
+        <a href="https://go.echoar.xyz/kkG8" style="text-decoration: none" target="_blank" rel="noreferrer">
+          <div class="btn">View in AR</div>
+        </a>
       </div>
     </div>
+    <div id="model">
+      <model-viewer camera-controls alt="A 3D model of a sphere" src="../media/dinosaur-page/dinosaur/scene.gltf">
+      </model-viewer>
+    </div>
+  </div>
 
-    <div id="holder">
-      <div id="text">
-        <h1 class="sample-text">Euoplocephalus: Armored dinosaur skull</h1>
-        <p class="">
-          The first fossil of Euoplocephalus was found in 1897 in Alberta. In
-          1902, it was named Stereocephalus, but that name had already been
-          given to an insect, so it was changed in 1910. Later, many more
-          ankylosaurid remains were found from the Campanian of North America
-          and often made separate genera. In 1971, Walter Coombs concluded that
-          they all belonged to Euoplocephalus which then would be one of the
-          best-known dinosaurs. Recently however, experts have come to the
-          opposite conclusion, limiting the authentic finds of Euoplocephalus to
-          about a dozen specimens. These include a number of almost complete
-          skeletons, so much is nevertheless known about the build of the
-          animal.
-        </p>
-        <div class="qrCode">
-          <img
-            class="qrCodeImg"
-            src="https://storage.echoar.xyz/wispy-violet-4999/2bd182e0-20bf-4b7c-9f1f-c834121c6708"
-            alt="Dinosaurs QR"
-          />
-          <a
-            href="https://go.echoar.xyz/eN18"
-            style="text-decoration: none"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div class="btn">View in AR</div>
-          </a>
-        </div>
-      </div>
-      <div id="model">
-        <model-viewer
-          camera-controls
-          alt="A 3D model of a sphere"
-          src="/media/dinosaur-page/euoplocephalus_-_armored_dinosaur_skull/scene.gltf"
-        >
-        </model-viewer>
+  <div id="holder">
+    <div id="text">
+      <h1 class="sample-text">Euoplocephalus: Armored dinosaur skull</h1>
+      <p class="">
+        The first fossil of Euoplocephalus was found in 1897 in Alberta. In
+        1902, it was named Stereocephalus, but that name had already been
+        given to an insect, so it was changed in 1910. Later, many more
+        ankylosaurid remains were found from the Campanian of North America
+        and often made separate genera. In 1971, Walter Coombs concluded that
+        they all belonged to Euoplocephalus which then would be one of the
+        best-known dinosaurs. Recently however, experts have come to the
+        opposite conclusion, limiting the authentic finds of Euoplocephalus to
+        about a dozen specimens. These include a number of almost complete
+        skeletons, so much is nevertheless known about the build of the
+        animal.
+      </p>
+      <div class="qrCode">
+        <img class="qrCodeImg" src="https://storage.echoar.xyz/wispy-violet-4999/2bd182e0-20bf-4b7c-9f1f-c834121c6708"
+          alt="Dinosaurs QR" />
+        <a href="https://go.echoar.xyz/eN18" style="text-decoration: none" target="_blank" rel="noreferrer">
+          <div class="btn">View in AR</div>
+        </a>
       </div>
     </div>
+    <div id="model">
+      <model-viewer camera-controls alt="A 3D model of a sphere"
+        src="../media/dinosaur-page/euoplocephalus_-_armored_dinosaur_skull/scene.gltf">
+      </model-viewer>
+    </div>
+  </div>
 
-    <div id="holder">
-      <div id="text">
-        <h1 class="sample-text">Stegoceras: Pachycephalosaur Dinosaur Skull</h1>
-        <p class="">
-          Pachycephalosaurus is a genus of pachycephalosaurid dinosaurs. The
-          type species, P. wyomingensis, is the only known species. It lived
-          during the Late Cretaceous Period (Maastrichtian stage) of what is now
-          North America. Remains have been excavated in Montana, South Dakota,
-          Wyoming and Alberta. It was a herbivorous creature which is primarily
-          known from a single skull and a few extremely thick skull roofs, at 9
-          inches thick.
-        </p>
-        <div class="qrCode">
-          <img
-            class="qrCodeImg"
-            src="https://storage.echoar.xyz/wispy-violet-4999/2bd182e0-20bf-4b7c-9f1f-c834121c6708"
-            alt="Dinosaurs QR"
-          />
-          <a
-            href="https://go.echoar.xyz/eN18"
-            style="text-decoration: none"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div class="btn">View in AR</div>
-          </a>
-        </div>
-      </div>
-      <div id="model">
-        <model-viewer
-          camera-controls
-          alt="A 3D model of a sphere"
-          src="/media/dinosaur-page/stegoceras_-_pachycephalosaur_dinosaur_skull/scene.gltf"
-        >
-        </model-viewer>
+  <div id="holder">
+    <div id="text">
+      <h1 class="sample-text">Stegoceras: Pachycephalosaur Dinosaur Skull</h1>
+      <p class="">
+        Pachycephalosaurus is a genus of pachycephalosaurid dinosaurs. The
+        type species, P. wyomingensis, is the only known species. It lived
+        during the Late Cretaceous Period (Maastrichtian stage) of what is now
+        North America. Remains have been excavated in Montana, South Dakota,
+        Wyoming and Alberta. It was a herbivorous creature which is primarily
+        known from a single skull and a few extremely thick skull roofs, at 9
+        inches thick.
+      </p>
+      <div class="qrCode">
+        <img class="qrCodeImg" src="https://storage.echoar.xyz/wispy-violet-4999/2bd182e0-20bf-4b7c-9f1f-c834121c6708"
+          alt="Dinosaurs QR" />
+        <a href="https://go.echoar.xyz/eN18" style="text-decoration: none" target="_blank" rel="noreferrer">
+          <div class="btn">View in AR</div>
+        </a>
       </div>
     </div>
+    <div id="model">
+      <model-viewer camera-controls alt="A 3D model of a sphere"
+        src="../media/dinosaur-page/stegoceras_-_pachycephalosaur_dinosaur_skull/scene.gltf">
+      </model-viewer>
+    </div>
+  </div>
 
-    <div id="holder">
-      <div id="text">
-        <h1 class="sample-text">Tyrannosaurus Rex</h1>
-        <p class="">
-          Tyrannosaurus rex (meaning "tyrant lizard king"), also known as T.
-          rex, is an extinct genus of tyrannosaurid theropod dinosaur that lived
-          in North America during the Late Cretaceous period around 68-65
-          million years ago. The undisputed king of the dinosaurs, it coexisted
-          alongside many well known dinosaurs such Triceratops, Ankylosaurus,
-          Pachycephalosaurus, Ornithomimus, Troodon, Edmontosaurus, Alamosaurus,
-          Nanotyrannus, and the pterosaur Quetzalcoatlus. This work is based on
-          "Trex"
-          (https://sketchfab.com/3d-models/trex-ef7f59fb082148a081ad0779775c6917)
-          by rmasakorala (https://sketchfab.com/rmasakorala) licensed under
-          CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
-        </p>
-        <div class="qrCode">
-          <img
-            class="qrCodeImg"
-            src="https://storage.echoar.xyz/wispy-violet-4999/2bd182e0-20bf-4b7c-9f1f-c834121c6708"
-            alt="Dinosaurs QR"
-          />
-          <a
-            href="https://go.echoar.xyz/eN18"
-            style="text-decoration: none"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div class="btn">View in AR</div>
-          </a>
-        </div>
-      </div>
-      <div id="model">
-        <model-viewer
-          camera-controls
-          alt="A 3D model of a sphere"
-          src="/media/dinosaur-page/trex/scene.gltf"
-        >
-        </model-viewer>
+  <div id="holder">
+    <div id="text">
+      <h1 class="sample-text">Tyrannosaurus Rex</h1>
+      <p class="">
+        Tyrannosaurus rex (meaning "tyrant lizard king"), also known as T.
+        rex, is an extinct genus of tyrannosaurid theropod dinosaur that lived
+        in North America during the Late Cretaceous period around 68-65
+        million years ago. The undisputed king of the dinosaurs, it coexisted
+        alongside many well known dinosaurs such Triceratops, Ankylosaurus,
+        Pachycephalosaurus, Ornithomimus, Troodon, Edmontosaurus, Alamosaurus,
+        Nanotyrannus, and the pterosaur Quetzalcoatlus. This work is based on
+        "Trex"
+        (https://sketchfab.com/3d-models/trex-ef7f59fb082148a081ad0779775c6917)
+        by rmasakorala (https://sketchfab.com/rmasakorala) licensed under
+        CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+      </p>
+      <div class="qrCode">
+        <img class="qrCodeImg" src="https://storage.echoar.xyz/wispy-violet-4999/2bd182e0-20bf-4b7c-9f1f-c834121c6708"
+          alt="Dinosaurs QR" />
+        <a href="https://go.echoar.xyz/eN18" style="text-decoration: none" target="_blank" rel="noreferrer">
+          <div class="btn">View in AR</div>
+        </a>
       </div>
     </div>
+    <div id="model">
+      <model-viewer camera-controls alt="A 3D model of a sphere" src="../media/dinosaur-page/trex/scene.gltf">
+      </model-viewer>
+    </div>
+  </div>
 
-    <!-- Loads model-viewer for modern browsers -->
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
-    ></script>
-    <!-- Loads model-viewer for older browsers -->
-    <script
-      nomodule
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
-    ></script>
-  </body>
+  <h1 class="heading">Stone Age era</h1>
+
+  <div id="holder">
+    <div id="text">
+      <h1 class="sample-text">Stone Hammer Axe</h1>
+      <p class="">
+        In archaeology, a hammerstone is a hard cobble used to strike off
+        lithic flakes from a lump of tool stone during the process of lithic
+        reduction. The hammerstone is a rather universal stone tool which
+        appeared early in most regions of the world including Europe, India
+        and North America. This work is based on "Stone hammer Axe (Free)"
+        (https://sketchfab.com/3d-models/stone-hammer-axe-free-a0e76cba79784776b4346e6ae1732472)
+        by wolfgar74 (https://sketchfab.com/wolfgar74) licensed under
+        CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+      </p>
+      <div class="qrCode">
+        <img class="qrCodeImg" src="https://storage.echoar.xyz/wispy-violet-4999/e2d9e5e4-d34b-4199-b7bc-c6ea5d24889f"
+          alt="Stone Age Tools QR" />
+        <a href="https://go.echoar.xyz/PnCX" style="text-decoration: none" target="_blank" rel="noreferrer">
+          <div class="btn">View in AR</div>
+        </a>
+      </div>
+    </div>
+    <div id="model">
+      <model-viewer camera-controls alt="A 3D model of a sphere"
+        src="../media/stoneAge-page/stone_hammer_axe_free/scene.gltf">
+      </model-viewer>
+    </div>
+  </div>
+
+  <div id="holder">
+    <div id="text">
+      <h1 class="sample-text">Stone Age Tools</h1>
+      <p class="">
+        The Early Stone Age began with the most basic stone implements made by
+        early humans. These Oldowan toolkits include hammerstones, stone
+        cores, and sharp stone flakes. By about 1.76 million years ago, early
+        humans began to make Acheulean handaxes and other large cutting
+        tools.This work is based on "Stone to Tools"
+        (https://sketchfab.com/3d-models/stone-to-tools-e6d053885e454f498878969ebbde1d25)
+        by John Toeppen (https://sketchfab.com/toeppen) licensed under
+        CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+      </p>
+      <div class="qrCode">
+        <img class="qrCodeImg" src="https://storage.echoar.xyz/wispy-violet-4999/e2d9e5e4-d34b-4199-b7bc-c6ea5d24889f"
+          alt="Stone Age Tools QR" />
+        <a href="https://go.echoar.xyz/PnCX" style="text-decoration: none" target="_blank" rel="noreferrer">
+          <div class="btn">View in AR</div>
+        </a>
+      </div>
+    </div>
+    <div id="model">
+      <model-viewer camera-controls alt="A 3D model of a sphere" src="../media/stoneAge-page/stone_to_tools/scene.gltf">
+      </model-viewer>
+    </div>
+  </div>
+
+
+  <!-- Loads model-viewer for modern browsers -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <!-- Loads model-viewer for older browsers -->
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</body>
+
 </html>
