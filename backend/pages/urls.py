@@ -5,4 +5,6 @@ urlpatterns = [
     path('dinos', dianos),
     path('stoneage', stoneage),
     path('', homepage),
+    path('map',maps),
+    path('tour',tour),
 ]

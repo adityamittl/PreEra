@@ -12,3 +12,11 @@ def stoneage(request):
 
 def homepage(request):
     return render(request, 'home.html')
+
+def maps(request):
+    return render(request,'map.html')
+
+
+def tour(request):
+    return render(request,'tour.html')
+
