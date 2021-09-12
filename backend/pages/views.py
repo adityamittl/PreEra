@@ -9,3 +9,6 @@ def dianos(request):
 
 def stoneage(request):
     return render(request, 'stoneAgeTools.html')
+
+def homepage(request):
+    return render(request, 'home.html')
