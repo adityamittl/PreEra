@@ -2,12 +2,12 @@
 
 ## 💡 Inspiration
 
-When the Pandemic began, all the public places were shut including Museums. Since people could no longer visit museum, we brought the museum to people's homes. This will not only bring joy to all the Dinosaur Lovers out there but Private Tour feature, build some extra income for all the museum staff and Palentologists out there.
+When the Pandemic began, all the public places were shut including Museums. Since people could no longer visit museums, we brought the museum to people's homes. This will not only bring joy to all the Dinosaur Lovers out there but Private Tour feature, build some extra income for all the museum staff and Paleontologists out there.
 
 ## 💻 What it does
 
-Thalassophile exhibits various species of Dinosaurs and Old age Tools (the ones that are found at the museum), elucidate their features and imitate them into real world using AR (Augmented Reality) technology. <br>
-Moreover it provides a Private Tour functionality where people can book a private tour by an expert from the museum at the comfort of their homes.
+Thalassophile exhibits various species of Dinosaurs and Old age Tools (the ones that are found at the museum), elucidates their features, and imitates them into the real world using AR (Augmented Reality) technology. <br>
+Moreover, it provides a Private Tour functionality where people can book a private tour by an expert from the museum at the comfort of their homes.
 
 ## ⚙️ How it works
 
@@ -20,7 +20,7 @@ Moreover it provides a Private Tour functionality where people can book a privat
 
 ## 🔨 Tech Stack
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
 
 ## 🧠 Challenges we ran into
 
@@ -32,7 +32,7 @@ We are happy that we completed the project in this short frame of time and we le
 
 ## 📖 What we learned
 
-How to use Three Js, and collaboration.
+How to use Three Js and collaboration.
 
 ## 🚀 What's next for Pre Era
 
